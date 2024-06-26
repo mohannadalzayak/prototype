@@ -43,13 +43,13 @@ export default function SignUp() {
                 <div className='flex-1'>
                     <Link to='/' className='font-bold dark:text-white text-4xl'>
             <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-              Mohannad
+              Team5
             </span>
                         Blog's
                     </Link>
                     <p className='text-sm mt-5'>
-                        This is a demo project. You can sign up with your email and password
-                        or with Google.
+                        Dies ist ein Demoprojekt. Sie können sich mit Ihrer E-Mail-Adresse und Ihrem Passwort
+                        oder mit Google anmelden.
                     </p>
                 </div>
                 {/* right */}
@@ -57,7 +57,7 @@ export default function SignUp() {
                 <div className='flex-1'>
                     <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
                         <div>
-                            <Label value='Your username' />
+                            <Label value='Dein Benutzername' />
                             <TextInput
                                 type='text'
                                 placeholder='Username'
@@ -66,7 +66,7 @@ export default function SignUp() {
                             />
                         </div>
                         <div>
-                            <Label value='Your email' />
+                            <Label value='Deine E-Mail' />
                             <TextInput
                                 type='email'
                                 placeholder='name@company.com'
@@ -75,7 +75,7 @@ export default function SignUp() {
                             />
                         </div>
                         <div>
-                            <Label value='Your password' />
+                            <Label value='Dein password' />
                             <TextInput
                                 type='password'
                                 placeholder='Password'
@@ -99,9 +99,9 @@ export default function SignUp() {
                         </Button>
                     </form>
                     <div className='flex gap-2 text-sm mt-5'>
-                        <span>Have an account?</span>
+                        <span>Haben Sie ein Konto? Einloggen</span>
                         <Link to='/sign-in' className='text-blue-500'>
-                            Sign In
+                            Einloggen
                         </Link>
                     </div>
                     {errorMessage && (
